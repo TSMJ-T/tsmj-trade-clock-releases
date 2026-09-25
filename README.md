@@ -22,3 +22,17 @@ no silent install.
 To publish a new version: bump `version` here to match the new build, and
 publish the built `.exe` under this repo's Releases page (so the `url`
 above always resolves to the newest one).
+
+## `calendar-links.html`
+
+A static page listing well-known economic calendar sites (Forex Factory,
+Investing.com, Dukascopy Japan, etc.) - the app links out here instead of
+pulling in any calendar data itself, so no third-party data-licensing
+question applies (a plain outbound link needs no permission). Linked from
+the app's own right-click menu. Editing this file and pushing to `main`
+updates what every installed copy of the app shows next time someone opens
+that menu item - no app rebuild/redistribution needed.
+
+Served via GitHub Pages once enabled for this repo (Settings → Pages →
+Deploy from a branch → `main` / root) at:
+`https://tsmj-t.github.io/tsmj-trade-clock-releases/calendar-links.html`
